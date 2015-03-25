@@ -34,6 +34,29 @@
     <include path="/cv72x72.png" />
     <include path="/portrait.png" />
     <include path="/stain.png" />
+    <include path="/js/jquery-2.1.0.js" />
+    <include path="/js/jquery-ui-1.10.4.min.js" />
+    <include path="/css/ui-lightness/jquery-ui-1.10.4.min.css" />
+    <include path="/css/ui-lightness/jquery-ui-1.10.4.css" />
+    <include path="/css/ui-lightness/jquery-ui-1.10.4.custom.min.css" />
+    <include path="/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
+    
+    <include path="/css/ui-lightness/images/animated-overlay.png" />
+    <include path="/css/ui-lightness/images/ui-icons_ffffff_256x240.png" />
+    <include path="/css/ui-lightness/images/ui-icons_ffd27a_256x240.png" />
+    <include path="/css/ui-lightness/images/ui-icons_ef8c08_256x240.png" />
+    <include path="/css/ui-lightness/images/ui-icons_222222_256x240.png" />
+    <include path="/css/ui-lightness/images/ui-icons_228ef1_256x240.png" />
+    <include path="/css/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <include path="/css/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <include path="/css/ui-lightness/images/ui-bg_flat_100_eee_40x100.png" />
+    <include path="/css/ui-lightness/images/ui-bg_flat_100_fff_40x100.png" />
+    <include path="/css/ui-lightness/images/ui-bg_flat_75_ffe45c_40x100.png" />
+    <include path="/css/ui-lightness/images/ui-bg_flat_65_ffffff_40x100.png" />
+    <include path="/css/ui-lightness/images/ui-bg_flat_35_f6a828_40x100.png" />
+    <include path="/css/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" />
+    <include path="/css/ui-lightness/images/ui-bg_flat_0_fff_40x100.png" />
+    
 	</static-files>
 
 </appengine-web-app>

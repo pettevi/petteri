@@ -1,9 +1,16 @@
 <html>
   <head>
+
   <link rel="apple-touch-icon" href="cv57x57.png"/>  
 	<link rel="apple-touch-icon" sizes="72x72" href="cv72x72.png"/>  
   <link rel="apple-touch-icon" sizes="114x114" href="cv114x114.png"/>  
   <link rel="shortcut icon" href="favicon.ico">
+
+	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.4.custom.css" />
+	<script src="js/jquery-2.1.0.js"></script>
+	<script src="js/jquery-ui-1.10.4.min.js"></script>
+  <script src="http://malsup.github.com/jquery.form.js"></script> 
+
   <title>Hello, I am Petteri!</title>
 
   <style>
@@ -15,22 +22,9 @@ html,body {
   outline: 0;
   font-size: 14px;
   font-family: arial;
-  line-height: 1.2;
-  background: #fdfdfd;
-
-/*  background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#fff));
-  background-image: -webkit-linear-gradient(top, #fafafa, #fff);
-  background-image: -moz-linear-gradient(top, #fafafa, #fff);
-  background-image: -ms-linear-gradient(top, #fafafa, #fff);
-  background-image: -o-linear-gradient(top, #fafafa, #fff);
-  background-image: linear-gradient(#fafafa, #fff);*/
-}
-
-body {
-  background-image: url(stain.png);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 30px 380px;
+  line-height: 1.3;
+  color: #333;
+  background: #555;
 }
 
 div {
@@ -38,15 +32,14 @@ div {
 }
 
 h1 {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: normal;
   margin: 0 0 5px 0;
-  text-transform:uppercase;
 }
 
 h2 {
   display: block;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   margin: 0;
 }
@@ -74,39 +67,32 @@ a:hover {
   text-decoration: underline;
 }
 
-summary {
-  padding: 12px;
-  font-size: 18px;
+#summary {
+  padding: 12px 0 0 0;
+  font-size: 22px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  cursor:pointer;
   background: #FFF;
   border-bottom: 2px solid #aaa;
 }
-summary:hover {
-  color: #0057ab;
-  border-bottom: 2px solid #0057ab;
-}
 
-details {
+#details {
   margin: 20px 0 0 0;
   padding: 20px auto;
   border-radius: 8px;
 }
 
 #containerframe {
-  width: 750px;
+  max-width: 750px;
   margin: 20px auto;
   text-align: left;
 }
 
 #sectionframe {
-  width: 660px;
   padding: 20px;
   text-align: left;
 }
 
 #nameline {
-  width: 684px;
   background-image: -webkit-linear-gradient(top, #ff7c2b, #cc5100);
   background-image: -moz-linear-gradient(top, #ff7c2b, #cc5100);
   background-image: -ms-linear-gradient(top, #ff7c2b, #cc5100);
@@ -116,57 +102,72 @@ details {
   color: #fff;
   padding: 24px;
   letter-spacing: 1px;
-  font-size: 22px;
-  box-shadow: 3px 3px 15px rgba(80,80,80,1);
-  -moz-box-shadow: 3px 3px 15px rgba(80,80,80,1);
-  -webkit-box-shadow: 3px 3px 15px rgba(80,80,80,1);
+  font-size: 24px;
+  font-weight:bold;
 }
-/*
-#nameline p {
-  display: inline;
-	color: #E4C35A;
-	font-size: 24px;
-	letter-spacing: 2px;
-	padding: 0;
-	margin: 0 20px;
-}
-*/
-#topsectionframe {
-  background: #FFF; /*#F8EAFF;*/
-  width: 692px;
-  padding: 20px;
+
+#paperframe {
+  background: #FFF;
   text-align: left;
-/*  border: 1px solid #aaa;*/
   border-radius: 0 0 8px 8px;
-  background-image: url(portrait.png);
-  background-size: 125px 160px;
-  background-position: 585px 20px;
-  background-repeat: no-repeat;
   -moz-box-shadow: 3px 3px 15px rgba(60,60,60,1), inset 0 0 15px rgba(0, 0, 0, 0.1);
   box-shadow: 3px 3px 15px rgba(60,60,60,1), inset 0 0 15px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 3px 3px 15px rgba(60,60,60,1), inset 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
+#papercontentframe {
+  max-width: 692px;
+  margin: 30px 30px 20px 30px;
+  text-align: left;
+  position: relative;
+  background-image: url(portrait.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+#textii{
+  margin: 0 140px 10px 0;
+}
+
 #sectionframe_current {
-  width: 710px;
   padding: 20px;
   text-align: left;
-  background-image: url(http://www.dnwpartners.com/template/html/default/img/logo.png);
-  background-size: 141px 32px;
-  background-position: 550px 20px;
-  background-repeat: no-repeat;
+}
+
+.dnwpimage img{
+  float: right;
 }
 
 #linkedinframe {
 	display: inline-block;
-	width: 710px;
 	background: url(http://s.c.lnkd.licdn.com/scds/common/u/img/sprite/sprite_connect_v13.png) -92px -42px no-repeat;
 }
 
-#description {
-  width: 500px;
-  padding: 15px 0 0 0;
+#accordion{
+  padding: 0 0 20px 0;
+
 }
+
+form fieldset {
+  margin: 10px 0;
+  border: none;
+  padding: 0;
+}
+form label {
+  display: inline-block;
+  line-height: 1.8;
+  vertical-align: top;
+  width: 100px; /* Width of labels */
+}
+form fieldset ol {
+  margin: 0;
+  padding: 0;
+}
+form fieldset li {
+  list-style: none;
+  margin: 0;
+}
+
 
 #footer
 {
@@ -176,23 +177,23 @@ details {
   text-align: center;
   height: 40px;
   white-space: nowrap;
-  color: #B67B31;
+  color: #bbb;
 }
 
 #footer a {
   font-weight: normal;
   text-decoration: none;
-  color: #B67B31;
+  color: #bbb;
 }
 
 #footer a:hover {
   text-decoration: underline;
 }
 
-#light {
+#light, #thankyoumessage {
   display: none;
   background-color:#fff;
-  width:350px;
+  max-width:310px;
   padding:20px;
   margin: 50px auto;
   border: 4px solid #000;
@@ -230,12 +231,65 @@ details {
     transition: opacity .15s ease-in-out;
 }
 
+.glowing-border {
+    border: 2px solid #dadada;
+    border-radius: 2px;
+}
+
+.glowing-border:focus { 
+    outline: none;
+    border-color: #0057ab;
+}
+
+.glowing-border:hover { 
+    outline: none;
+    border-color: #0057ab;
+    background-color: #eee;
+}
+
+.input-button {
+    border: 2px solid #dadada;
+    border-radius: 2px;
+    padding: 2px 9px;
+}
+
+.input-button:hover { 
+    outline: none;
+    border-color: #0057ab;
+}
+
+@media only screen and (max-width: 480px) {
+  
+  #papercontentframe {
+    background-image: none;  
+  }
+
+	#textii{
+	  margin: 0;
+	}
+
+  body {
+    font-size: 12px;
+	  line-height: 1.1;
+	  background-image: none;
+	}
+  	
+  h1 {
+    font-size: 18px;
+  }
+
+	h2 {
+	  font-size: 12px;
+	}
+
+	.dnwpimage img{
+	  max-width: 75px;
+	}
+
+}
+
   </style>
   
-  </head>
-
-  <body>
-
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -259,42 +313,93 @@ details {
 	{
 	    document.getElementById('light').style.display='none';
 	    document.getElementById('fade').style.display='none';
+      document.getElementById('thankyoumessage').style.display='none';
 	}
 	</script>
 
+  <script language="javascript" type="text/javascript">
+  function OpenThankYou()
+  {
+      var page_screen = document.getElementById('fade');
+      page_screen.style.height = document.body.parentNode.scrollHeight + 'px';
+      page_screen.style.display = 'block';
+      document.getElementById('thankyoumessage').style.top=document.body.scrollTop + 'px';
+      document.getElementById('thankyoumessage').style.display='block';
+  }
+  
+  function CloseThankYou()
+  {
+      document.getElementById('thankyoumessage').style.display='none';
+      document.getElementById('fade').style.display='none';
+  }
+  </script>
+
+  <script>
+  $(function() {
+	    $( "#accordion" ).accordion({
+	    	animate: 800,
+	      collapsible: true,
+	      active: false,
+	      heightStyle: "content",
+	      icons: { "header": "ui-icon-plusthick", "activeHeader": "ui-icon-minusthick" }
+	    });
+	  });
+  </script>
+  
+  <script> 
+    // wait for the DOM to be loaded 
+    $(document).ready(function() { 
+        // bind 'myForm' and provide a simple callback function 
+        $('#contact').ajaxForm(function() { 
+        	OpenThankYou();
+        }); 
+     }); 
+  </script> 
+    
+    
+  </head>
+
+  <body>
+  
+  
 <div id="light">
     <h1>Terms and conditions</h1>
     <h2>This site is intended solely for your personal information. Intellectual property rights and material on the website is owned. 
     You may view, download for caching purposes, and print pages from the website for your own personal use. 
-    Any kind of redistribution, publication or broadcasting is prohibited.</h2>
+    Any kind of redistribution, publication or broadcasting is prohibited. All rights reserved.</h2>
     <br>
     <h2>Certain images can be owned by third parties.</h2>
     <br>
-    <h2>Copyright © 2014 Petteri Hamalainen. All rights reserved.</h2>
+    <h2>Copyright © 2014 Petteri Hamalainen.</h2>
+    <br>
+    <h2>Have a nice day.</h2>
   <br>
     <a id="menu" href="javascript:void(0)" onclick="LightenPage()">Close</a>
 </div>
 
 <div id="fade" class="fader" onclick="LightenPage()"></div>
 
+<div id="thankyoumessage">
+    <h1>Thank You!</h1>
+    <h2>Your message is on the way. I'll get back to you soon.</h2>
+    <br>
+    <a id="menu" href="javascript:void(0)" onclick="CloseThankYou()">Close</a>
+</div>
+
 <div id="containerframe">
 
+  <div id="paperframe">
   <div id="nameline">Hello, I am Petteri!</div>
-  <div id="topsectionframe">
-  <h1>SW professional with 15 years experience in the industry</h1>
-  <h2>Passion in HTML5, IP networks and technologies and, ultimately, happy customers.</h2>
+  <div id="papercontentframe">
 
-  <p id="description">I am practical, somewhat artistic but absolutely definitely down to the ground hands-on guy. 
-  I can spend hours investigating smallest technical details while next attending telco with a customer. 
-  I am cooperative by nature, patient and diplomatic. Traits that surely have been valuable when teaching.
-  I trust it can be said I get along with my colleagues. 
+  <div id="textii">
+  <h1>SW professional and a dad</h1>
+  <h2>Passion in HTML5, IP networks and, ultimately, happy customers.</h2>
+
+  <p>I am practical, somewhat artistic but absolutely definitely down to the ground hands-on guy.
+  Background in sw development, trained in people sciences and experienced in customer deliveries of 100's of kEUR.
   </p>
-  
-  <ul>
-  <li>Born in 1972, Finland</li>
-  <li>Married with two children</li>
-  <li>Languages: Finnish native, English fluent, Swedish good</li>
-  </ul>
+  </div>
   
   <div>
   <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
@@ -302,116 +407,135 @@ details {
   </div>
 <br>  
 
-<details>
-  <summary>CURRENT POSITION</summary>
+<div id="accordion">
+  <h3>CURRENT POSITION</h3>
   <div id="sectionframe_current">
-  <h1>Product Manager, NMS</h1>
-  <h2><a href="http://www.dnwpartners.com">Dedicated Network Partners Oy</a></h2>
-  <p id="description">As Product Manager for Network Management Systems I'm performing daily customer project follow-ups  
-  and keeping information flow steady. Biggest success has been NMS offer to customer in Malaysia valued up to 500k Euro.</p>
-  <ul>
-  <li>Defined company's network management offer</li>
-  <li>Supporting sales, answering RFQs, composing purchase orders, defining delivery projects</li>
-  <li>Negotiations with customers, partners and resellers</li>
-  <li>Producing documentation and presentations on NMS solution</li>
-  <li>Building and maintaining network test bed</li>
-  </ul>
+  <div class="dnwpimage">
+    <img src="http://www.dnwpartners.com/template/html/default/img/logo.png">
   </div>
-</details>
+	  <h1>Product Manager, NMS</h1>
+	  <h2><a href="http://www.dnwpartners.com">Dedicated Network Partners Oy</a></h2>
+	  <p>As Product Manager for Network Management Systems I'm performing daily customer project follow-ups  
+	  and keeping information flow steady. Biggest success has been NMS offer to a customer valued up to 500k Euro.</p>
+	  <ul>
+		  <li>Defined company's network management offer</li>
+		  <li>Supporting sales, answering RFQs, composing purchase orders, defining delivery projects</li>
+		  <li>Negotiations with customers, partners and resellers</li>
+		  <li>Producing documentation and presentations on NMS solution</li>
+		  <li>Building and maintaining network test bed</li>
+      <li>Implementation of network device management applications running on Windows</li>
+	  </ul>
+  </div>
 
-<details>
-  <summary>WORK EXPERIENCE</summary>
+  <h3>WORK EXPERIENCE</h3>
   <div id="sectionframe">
-  <h1>Product Manager, 2007 - 2012</h1>
-  <h2>Nokia Siemens Networks, Oulu</h2>
-  <ul>
-  <li>Management of several Microsoft Windows based applications </li>
-  <li>Negotiation with sales front and end customers, finding solutions to their problems, creating product documentation, presentations and delivering product training</li>
-  <li>Guiding 5 person overseas subcontractor team and approving work</li>
-  <li>Roadmapping, maintaining product backlogs, managing sprints for an R&D team, applying for product milestones, making customer releases</li>
-  <li>Agile area product owner for a 5 man team in a 200 person project</li>
-  <li>On a short term transfer 09/2009 - 02/2010 in Milan, Italy</li>
-  </ul>
-  
-  <h1>SW Specialist / Designer, 1999 - 2007</h1>
-  <h2>Nokia Networks, Oulu</h2>
-  <ul>
-  <li>Java based desktop application design and implementation</li>
-  <li>Also feature planning and tracking, defining requirements, specification, usability design, SW architecture and design, testing. Maintaining developer wiki</li>
-  </ul>
-  
-  <h1>Teacher and hourly instructor, 1996 - 1999, 2008</h1>
-  <h2>Several technical schools in Oulu, Rovaniemi and Ylivieska, Finland</h2>
-  <ul>
-  <li>Various adult education groups</li> 
-  <li>Subjects ranging from Java, C, C++, Windows programming, Visual Basic to Microsoft Office tools</li>
-  <li>Classes both in Finnish and English languages</li>
-  </ul>
+	  <h1>Product Manager, 2007 - 2012</h1>
+	  <h2>Nokia Siemens Networks</h2>
+	  <ul>
+		  <li>Management of several Microsoft Windows based applications </li>
+		  <li>Negotiation with sales front and end customers, finding solutions to their problems, creating product documentation, presentations and delivering product training</li>
+		  <li>Guiding 5 person overseas subcontractor team and approving work</li>
+		  <li>Roadmapping, maintaining product backlogs, managing sprints for an R&D team, applying for product milestones, making customer releases</li>
+		  <li>Agile area product owner for a 5 man team in a 200 person project</li>
+		  <li>On a short term transfer 09/2009 - 02/2010 in Milan, Italy</li>
+	  </ul>
+	  
+	  <h1>SW Specialist / Designer, 1999 - 2007</h1>
+	  <h2>Nokia Networks</h2>
+	  <ul>
+	  <li>Java based desktop application design and implementation</li>
+	  <li>Also feature planning and tracking, defining requirements, specification, usability design, SW architecture and design, testing. Maintaining developer wiki</li>
+	  </ul>
+	  
+	  <h1>Teacher and hourly instructor, 1996 - 1999, 2008</h1>
+	  <h2>Several technical schools in Oulu, Rovaniemi and Ylivieska, Finland</h2>
+	  <ul>
+	  <li>Various adult education groups</li> 
+	  <li>Subjects ranging from Java, C, C++, Windows programming, Visual Basic to Microsoft Office tools</li>
+	  <li>Classes both in Finnish and English languages</li>
+	  </ul>
   
   </div>
-</details>
 
-<details>
-  <summary>EDUCATION</summary>
+<h3>EDUCATION</h3>
   <div id="sectionframe">
-  <h1>Master of Science, 1992 - 1999</h1>
-  <h2>Mathematical Sciences Subject Teacher, University of Oulu, Finland</h2>
-  <ul>
-  <li>Major in physics</li>
-  <li>Minors in information processing science and mathematics</li>
-  <li>Pedagogic studies completed as required by Finnish National Board of Education</li>
-  <li>Masters thesis "Data Transfer and Communication and it's Teaching in High School and College Levels"</li>
-  </ul>
-  
-  <h1>Web courses during 2012 - 2014</h1>
-
-  <p>Beginning Game Programming With C# - University of Colorado<br>
-  Contents: C#, XNA, graphics drawing, game loop, collision detection, Visual Studio</p>
-
-  <p>Introduction to computer networks - Stanford<br>
-  Contents: data security, name server, routing, topology design and protocols</p>
-
-  <p>Engineering long lasting SaaS - Berkeley<br>
-  Contents: Ruby on Rails, GitHub, Amazon Cloud Service</p>
-
-  <p>Verkkokurssi yrittäjyyteen - Markkinointi-instituutti<br>
-  Contents: Being entrepreneur, marketing, financing</p>
-
-  <h1>Personal Interests</h1>
-
-  <p>Enthusiasm in <a href="https://www.google.com/intl/en/chrome/browser/">Google Chrome</a> and 
-  <a href="https://developers.google.com/appengine/">AppEngine</a>, web development especially in 
-  <a href="http://www.w3schools.com/default.asp">HTML5</a> and 
-  <a href="http://www.oracle.com/technetwork/java/javaee/jsp">JavaServer Pages</a> and, of course, 
-  <a href="https://wordpress.org/">WordPress</a>.</p>
-  <p>Web sites designed by me for imaginary cafeteria <a href="http://eetusdeli.appspot.com/">Eetus Deli</a> and pet finding site <a href="http://haveyouseenmypet.appspot.com/">Have You Seen My Pet</a>.</p>
-  <p>In addition to this several half-day to one day courses arranged by Business Oulu including Social Media, 
-  Search Engine Optimisation, On-line Sales, Lean Innovation and Digital Content Creation Process. 
-  Participating also in <a href="http://uranoste.fi/">Uranoste</a> events.</p>
-  </div>
-</details>
-
-<details>
-  <summary>CONTACT</summary>
+	  <h1>Master of Science, 1992 - 1999</h1>
+	  <h2>Mathematical Sciences Subject Teacher, University of Oulu, Finland</h2>
+	  <ul>
+	  <li>Major in physics</li>
+	  <li>Minors in information processing science and mathematics</li>
+	  <li>Pedagogic studies completed as required by Finnish National Board of Education</li>
+	  <li>Masters thesis "Data Transfer and Communication and it's Teaching in High School and College Levels"</li>
+	  </ul>
+	  
+	  <h1>Web courses during 2012 - 2014</h1>
+	
+	  <p>Beginning Game Programming With C# - University of Colorado<br>
+	  Contents: C#, XNA, graphics drawing, game loop, collision detection, Visual Studio</p>
+	
+	  <p>Introduction to computer networks - Stanford<br>
+	  Contents: data security, name server, routing, topology design and protocols</p>
+	
+	  <p>Engineering long lasting SaaS - Berkeley<br>
+	  Contents: Ruby on Rails, GitHub, Amazon Cloud Service</p>
+	
+	  <p>Verkkokurssi yrittäjyyteen - Markkinointi-instituutti<br>
+	  Contents: Being entrepreneur, marketing, financing</p>
+	  </div>
+	
+<h3>PERSONAL INTERESTS</h3>
   <div id="sectionframe">
-  <p>Mobile<br>
-  +358 40 8235645</p>
-
-  <p>Email<br>
-  <a href="mailto:petteri@petterihamalainen.com?Subject=Hi" target="_top">petteri@petterihamalainen.com</a></p>
+	  <p>Enthusiasm in Google Chrome and AppEngine, web development in 
+	  HTML5, JavaScript, jQuery, JavaServer Pages and WordPress.</p>
+	  Active web projects: 
+    <ul>
+	    <li>Childrens code school - <a href="http://www.koodioulu.com/">www.koodioulu.com</a></li>
+	    <li>Random quotes from Tintin books - <a href="http://www.dailytintin.com/">www.dailytintin.com</a></li>
+	    <li>Wifes imaginary cafe Eetus deli - <a href="http://eetusdeli.appspot.com/">eetusdeli.appspot.com</a></li>
+	    <li>Lost pet finding site - <a href="http://haveyouseenmypet.appspot.com/">haveyouseenmypet.appspot.com</a></li>
+    </ul>
+	  <p>In addition to this several half-day to one day courses arranged by Business Oulu including Social Media, 
+	  Search Engine Optimisation, On-line Sales, Lean Innovation and Digital Content Creation Process. 
+	  Participating also in <a href="http://yritystakomo.fi/">Yritys Takomo</a> and <a href="http://uranoste.fi/">Uranoste</a> events.</p>
   </div>
-</details>
 
+
+<h3>CONTACT</h3>
+  <div id="sectionframe">
+	  <p>Send me a message! Leave your contact info and I'll get back to you a.s.a.p. 
+	  None of the fields are mandatory.</p>
+	  <form id="contact" name="input" action="contact" method="post">
+		  <div class="fields">
+			  <fieldset>
+			  <ol>
+				  <li><label class="field" for="name">Message:</label> <input class="glowing-border" type="text" name="name" size="25"></li>
+				  <li><label class="field" for="email">Email:</label> <input class="glowing-border" type="email" name="email" size="25"></li>
+				  <li><label class="field" for="tel">Tel:</label> <input class="glowing-border" type="tel" name="tel" size="25"></li>
+				  <br>
+				  <li><input class="input-button" type="submit" name="submit" value="Send"></li>
+				  </ol>
+			  </fieldset>
+		  </div>
+	  </form>
+  <div id="corner">
+  </div>
+  </div>
+
+</div>
+
+<!-- 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- petteri -->
+
 <ins class="adsbygoogle"
-     style="background:#fafafa;margin:20px ;display:inline-block;width:650px;height:60px;"
+     style="margin:20px;display:inline-block;width:650px;height:60px;"
      data-ad-client="ca-pub-3957416781945589"
      data-ad-slot="9490158752"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
+ -->
+ 
+  </div>
   </div>
   </div>
 
