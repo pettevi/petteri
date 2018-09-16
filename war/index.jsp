@@ -117,7 +117,7 @@ a:hover {
 
 #papercontentframe {
   max-width: 692px;
-  margin: 30px 30px 20px 30px;
+  margin: 30px 00px 10px 30px;
   text-align: left;
   position: relative;
   background-image: url(portrait.png);
@@ -126,7 +126,7 @@ a:hover {
 }
 
 #textii{
-  margin: 0 140px 10px 0;
+  margin: 0 160px 10px 0;
 }
 
 #sectionframe_current {
@@ -290,14 +290,6 @@ form fieldset li {
 
   </style>
   
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-37518235-2', 'petterihamalainen.com');
-	  ga('send', 'pageview');	
-	</script>
 
 	<script language="javascript" type="text/javascript">
 	function DarkenPage()
@@ -305,7 +297,7 @@ form fieldset li {
 	    var page_screen = document.getElementById('fade');
 	    page_screen.style.height = document.body.parentNode.scrollHeight + 'px';
 	    page_screen.style.display = 'block';
-      document.getElementById('light').style.top=document.body.scrollTop + 'px';
+        document.getElementById('light').style.top=document.body.scrollTop + 'px';
 	    document.getElementById('light').style.display='block';
 	}
 	
@@ -313,7 +305,7 @@ form fieldset li {
 	{
 	    document.getElementById('light').style.display='none';
 	    document.getElementById('fade').style.display='none';
-      document.getElementById('thankyoumessage').style.display='none';
+        document.getElementById('thankyoumessage').style.display='none';
 	}
 	</script>
 
@@ -368,11 +360,9 @@ form fieldset li {
     You may view, download for caching purposes, and print pages from the website for your own personal use. 
     Any kind of redistribution, publication or broadcasting is prohibited. All rights reserved.</h2>
     <br>
-    <h2>Certain images can be owned by third parties.</h2>
+    <h2>Copyright © 2018 Petteri Hamalainen.</h2>
     <br>
-    <h2>Copyright © 2014 Petteri Hamalainen.</h2>
-    <br>
-    <h2>Have a nice day.</h2>
+    <h2>Have a great day!</h2>
   <br>
     <a id="menu" href="javascript:void(0)" onclick="LightenPage()">Close</a>
 </div>
@@ -393,11 +383,13 @@ form fieldset li {
   <div id="papercontentframe">
 
   <div id="textii">
-  <h1>SW professional and a dad</h1>
-  <h2>Passion in HTML5, IP networks and, ultimately, happy customers.</h2>
+  <h1>SW Sales and Product Management Pro</h1>
+  <h2>Passion in SW development and, ultimately, happy customers.</h2>
 
-  <p>I am practical, somewhat artistic but absolutely definitely down to the ground hands-on guy.
-  Background in sw development, trained in people sciences and experienced in customer deliveries of 100's of kEUR.
+  <p>You have here a seasoned software professional. I'm technologically oriented, 
+  creative and artistic person with 20 years behind me in SW sales, development and engineering 
+  with experience ranging from sales to road mapping, requirements specification to testing and coding 
+  to backlog management. During the past few years I've worked with more than 40 different nationalities.
   </p>
   </div>
   
@@ -410,30 +402,35 @@ form fieldset li {
 <div id="accordion">
   <h3>CURRENT POSITION</h3>
   <div id="sectionframe_current">
-  <div class="dnwpimage">
-    <img src="http://www.dnwpartners.com/template/html/default/img/logo.png">
-  </div>
-	  <h1>Product Manager, NMS</h1>
+<!--  <div class="dnwpimage">
+    <img src="//logo.png">
+  </div>  -->
+	  <h1>Product Manager, 2012 - Now </h1>
 	  <h2><a href="http://www.dnwpartners.com">Dedicated Network Partners Oy</a></h2>
-	  <p>As Product Manager for Network Management Systems I'm performing daily customer project follow-ups  
-	  and keeping information flow steady. Biggest success has been NMS offer to a customer valued up to 500k Euro.</p>
+	  <p>DNWP manufactures and delivers mission critical communication network elements 
+	  for public and private sector. Part of the solution is network management for which 
+	  I work as the primary contact to customers.</p>
 	  <ul>
-		  <li>Defined company's network management offer</li>
-		  <li>Supporting sales, answering RFQs, composing purchase orders, defining delivery projects</li>
-		  <li>Negotiations with customers, partners and resellers</li>
-		  <li>Producing documentation and presentations on NMS solution</li>
-		  <li>Building and maintaining network test bed</li>
-      <li>Implementation of network device management applications running on Windows</li>
+		  <li>Defining company's network management offer</li>
+		  <li>Supporting sales, answering RFQs, composing offers, defining delivery projects</li>
+		  <li>Negotiations with end customers, partners and resellers</li>
+		  <li>Producing documentation and presentations</li>
 	  </ul>
+	  <h1>Biggest success</h1>
+	  	<p>	Delivery of DNWP NET Hero network management system to Saudi-Arabia valued at 100 000&#0128;
+	  	to a strategic partner meeting 
+			technical expectations in a high cost pressure environment. Responsibilities varied 
+			from price negotiations to on-site work.
+	  </p>
   </div>
 
   <h3>WORK EXPERIENCE</h3>
   <div id="sectionframe">
 	  <h1>Product Manager, 2007 - 2012</h1>
-	  <h2>Nokia Siemens Networks</h2>
+	  <h2>Nokia</h2>
 	  <ul>
 		  <li>Management of several Microsoft Windows based applications </li>
-		  <li>Negotiation with sales front and end customers, finding solutions to their problems, creating product documentation, presentations and delivering product training</li>
+		  <li>Negotiation with sales and end customers, troubleshoting, creating product documentation, presentations and delivering product training</li>
 		  <li>Guiding 5 person overseas subcontractor team and approving work</li>
 		  <li>Roadmapping, maintaining product backlogs, managing sprints for an R&D team, applying for product milestones, making customer releases</li>
 		  <li>Agile area product owner for a 5 man team in a 200 person project</li>
@@ -441,7 +438,7 @@ form fieldset li {
 	  </ul>
 	  
 	  <h1>SW Specialist / Designer, 1999 - 2007</h1>
-	  <h2>Nokia Networks</h2>
+	  <h2>Nokia</h2>
 	  <ul>
 	  <li>Java based desktop application design and implementation</li>
 	  <li>Also feature planning and tracking, defining requirements, specification, usability design, SW architecture and design, testing. Maintaining developer wiki</li>
@@ -468,42 +465,48 @@ form fieldset li {
 	  <li>Masters thesis "Data Transfer and Communication and it's Teaching in High School and College Levels"</li>
 	  </ul>
 	  
-	  <h1>Web courses during 2012 - 2014</h1>
+	  <h1>Additional training</h1>
 	
-	  <p>Beginning Game Programming With C# - University of Colorado<br>
-	  Contents: C#, XNA, graphics drawing, game loop, collision detection, Visual Studio</p>
+	  <p>Software development basics, 2018, Oulu Open University of Applied Sciences<br>
+	  Contents: MySQL, C++, Usability, Web development, Physics</p>
+
+	  <p>Strategic Leadership, 2017, Oulu Open University<br>
+	  Contents: The importance of strategy in business</p>
 	
-	  <p>Introduction to computer networks - Stanford<br>
-	  Contents: data security, name server, routing, topology design and protocols</p>
+	  <p>Principles of Marketing, 2016, Oulu Open University<br>
+	  Contents: Marketing mix, 5P's of marketing</p>
+
+	  <p>Sales Training, 2014-2015, Oulu OAKK<br>
+	  Contents: Selling value, addressing customers, taking responsibility</p>
 	
-	  <p>Engineering long lasting SaaS - Berkeley<br>
-	  Contents: Ruby on Rails, GitHub, Amazon Cloud Service</p>
-	
-	  <p>Verkkokurssi yrittäjyyteen - Markkinointi-instituutti<br>
-	  Contents: Being entrepreneur, marketing, financing</p>
+	  <p>Software as a Service (Berkeley), Entrepreneurship (Markkinointi-instituutti). 
+	  Several short courses by Tekes, Uranoste and Business Oulu such as Improving Customer Experience, 
+	  Social Media as Part of Sales, Search Engine Optimization, Intro to Online Sales, 
+	  Lean Innovation and Collaboration Skills at Work.</p>
 	  </div>
 	
-<h3>PERSONAL INTERESTS</h3>
+<h3>LEISURE</h3>
   <div id="sectionframe">
+	<h2>Entrepreneur</h2>
+	I do code clubs at elementary schools around Oulu. I also manage my own course catalogue in 
+	partnership with local organizations.</p> 
+	
+	<h2>Personal interests</h2>
+	Mountain and street biking, swimming, 80's rock music, cartoons. IOT such as Raspberry Pi and Arduino.
+
 	  <p>Enthusiasm in Google Chrome and AppEngine, web development in 
 	  HTML5, JavaScript, jQuery, JavaServer Pages and WordPress.</p>
 	  Active web projects: 
     <ul>
 	    <li>Childrens code school - <a href="http://www.koodioulu.com/">www.koodioulu.com</a></li>
 	    <li>Random quotes from Tintin books - <a href="http://www.dailytintin.com/">www.dailytintin.com</a></li>
-	    <li>Wifes imaginary cafe Eetus deli - <a href="http://eetusdeli.appspot.com/">eetusdeli.appspot.com</a></li>
-	    <li>Lost pet finding site - <a href="http://haveyouseenmypet.appspot.com/">haveyouseenmypet.appspot.com</a></li>
     </ul>
-	  <p>In addition to this several half-day to one day courses arranged by Business Oulu including Social Media, 
-	  Search Engine Optimisation, On-line Sales, Lean Innovation and Digital Content Creation Process. 
-	  Participating also in <a href="http://yritystakomo.fi/">Yritys Takomo</a> and <a href="http://uranoste.fi/">Uranoste</a> events.</p>
   </div>
 
 
 <h3>CONTACT</h3>
   <div id="sectionframe">
-	  <p>Send me a message! Leave your contact info and I'll get back to you a.s.a.p. 
-	  None of the fields are mandatory.</p>
+	  <p>Send me a message!</p>
 	  <form id="contact" name="input" action="contact" method="post">
 		  <div class="fields">
 			  <fieldset>
@@ -522,25 +525,13 @@ form fieldset li {
   </div>
 
 </div>
-
-<!-- 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<ins class="adsbygoogle"
-     style="margin:20px;display:inline-block;width:650px;height:60px;"
-     data-ad-client="ca-pub-3957416781945589"
-     data-ad-slot="9490158752"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
- -->
  
   </div>
   </div>
   </div>
 
   <div id="footer">
-    Copyright &#169; 2014 Petteri Hamalainen <br><a href="javascript:void(0)" onclick="DarkenPage()">Terms and Conditions</a>  
+    Copyright &#169; 2018 Petteri Hamalainen <br><a href="javascript:void(0)" onclick="DarkenPage()">Terms and Conditions</a>  
   </div>
 
   </body>
